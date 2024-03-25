@@ -1,0 +1,83 @@
+/**
+ * Tailwind CSS imports
+ * View the full documentation at https://tailwindcss.com
+ */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+#main {
+  width: auto;
+  height: auto;
+}
+
+*{
+  position: relative;;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+@layer base {
+  .title {
+    @apply w-20 h-4 m-2 bg-teal-900 rounded-md text-white;
+  }
+
+  .px-6{
+    opacity: 0.9;
+  }
+  td {
+    @apply text-center;
+  }
+
+  input {
+    @apply p-1 rounded-md focus:outline-none focus:border-alanturing-800 focus:border-2
+  }
+
+  button {
+    @apply px-2 py-1 rounded-md text-white
+  }
+
+  .button {
+    @apply px-2 py-2 rounded-md text-white cursor-pointer
+  }
+
+  i {
+    @apply mr-1
+  }
+
+  .button-age {
+    @apply w-72 mt-4 mr-3 bg-emerald-500
+  }
+
+  .button-age-highlighted {
+    @apply w-72 mt-4 mr-3 bg-emerald-800
+  }
+  .button-age:hover{
+    @apply bg-emerald-800
+  }
+  .absolute bottom-4 w-full text-center{
+    position: relative;
+    margin-top: 80%;
+  }
+}
+
+#borrar:hover{
+  @apply bg-red-800
+}
+
+#modificar:hover{
+  @apply bg-orange-800
+}
+
+#aceptar:hover{
+  @apply bg-green-800
+}
+
+#cancelar:hover{
+  @apply bg-red-800
+}
+
+footer{
+  font-size: 1.4em;
+  opacity: 0.4;
+  color: white;
+}
+
